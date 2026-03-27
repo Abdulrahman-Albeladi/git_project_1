@@ -1,5 +1,4 @@
 """Module provides functions to check if input is  valid"""
-##Hello
 def validate_number(value):
     """Validate that value can be converted to a number."""
     try:
@@ -10,6 +9,7 @@ def validate_number(value):
 
 def validate_operation(op):
     """Validate that operation is supported."""
+    # an list of valid operation
     valid_ops = ['+', '-', '*', '/']
     return op in valid_ops
 
