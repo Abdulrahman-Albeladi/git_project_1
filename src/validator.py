@@ -9,15 +9,15 @@ def validate_number(value):
 
 def validate_operation(op):
     """Validate that operation is supported."""
-    # an list of valid operation
-    valid_ops = ['+', '-', '*', '/']
+     # an list of valid operation
+    valid_ops = ['+', '-', '*', '/', '%']
     return op in valid_ops
 
-def validate_positive(n):
-    """Validate that a number is positive."""
+def validate_range(value, min_val=-1000, max_val=1000):
+    """Validate that number is within acceptable range."""
     try:
-        num = float(n)
-        return num > 0
+        num = float(value)
+        return min_val <= num <= max_val
     except (ValueError, TypeError):
         return False
 def is_positive(n):
