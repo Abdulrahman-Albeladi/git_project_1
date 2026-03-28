@@ -18,7 +18,6 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
     result = a / b
-    print(f"[DEBUG] Result: {result}")
     return result
 
 def square_root(a):
