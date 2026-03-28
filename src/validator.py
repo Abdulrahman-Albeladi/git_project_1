@@ -24,3 +24,5 @@ def validate_integer(n):
 def is_positive(n):
     """Check if a number is positive."""
     return n > 0
+
+    #Change for checkpoint 4
